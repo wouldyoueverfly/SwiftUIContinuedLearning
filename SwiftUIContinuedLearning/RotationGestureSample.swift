@@ -1,5 +1,5 @@
 //
-//  RotationGesture.swift
+//  RotationGestureSample.swift
 //  SwiftUIContinuedLearning
 //
 //  Created by dofxmine on 19.03.2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RotationGesture: View {
+struct RotationGestureSample: View {
     
     @State var angle: Angle = Angle(degrees: 0)
     
@@ -21,9 +21,18 @@ struct RotationGesture: View {
             .clipShape(RoundedRectangle(cornerRadius: 35))
             .rotationEffect(angle)
             .gesture(
-                RotateGesture()
+                //                RotateGesture()
+                //                    .onChanged { value in
+                //                        angle = value.rotation
+                //                    }
+                //                    .onEnded { value in
+                //                        withAnimation(.default) {
+                //                            angle = Angle(degrees: 0)
+                //                        }
+                //                    }
+                RotationGesture()
                     .onChanged { value in
-                        angle = value.rotation
+                        angle = value
                     }
                     .onEnded { value in
                         withAnimation(.default) {
@@ -35,5 +44,5 @@ struct RotationGesture: View {
 }
 
 #Preview {
-    RotationGesture()
+    RotationGestureSample()
 }

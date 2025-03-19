@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MagnificationGesture: View {
+struct MagnificationGestureSample: View {
     
     @State var currentAmount: CGFloat = 0
     @State var lastAmount: CGFloat = 0
@@ -33,5 +33,5 @@ struct MagnificationGesture: View {
 }
 
 #Preview {
-    MagnificationGesture()
+    MagnificationGestureSample()
 }

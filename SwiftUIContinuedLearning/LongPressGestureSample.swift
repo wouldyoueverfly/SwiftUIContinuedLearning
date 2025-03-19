@@ -1,5 +1,5 @@
 //
-//  LongPressGesture.swift
+//  LongPressGestureSample.swift
 //  SwiftUIContinuedLearning
 //
 //  Created by dofxmine on 18.03.2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LongPressGesture: View {
+struct LongPressGestureSample: View {
     
     @State var isComplete: Bool = false
     @State var isSuccess: Bool = false
@@ -64,21 +64,9 @@ struct LongPressGesture: View {
                     
                 }
         }
-//        Text(isComplete ? "COMPLETED" : "NOT COMPLETE")
-//            .foregroundStyle(.primary)
-//            .font(.headline)
-//            .padding()
-//            .padding(.horizontal)
-//            .background(isComplete ? .green : .gray)
-//            .clipShape(RoundedRectangle(cornerRadius: 10))
-//            .onLongPressGesture(minimumDuration: 0.5, maximumDistance: 1.0) {
-//                isComplete.toggle()
-//            }
-//            .scaleEffect(isComplete ? 1.5 : 1)
-//            .animation(.spring(response: 0.25, dampingFraction: 0.4, blendDuration: 1), value: isComplete)
     }
 }
 
 #Preview {
-    LongPressGesture()
+    LongPressGestureSample()
 }
